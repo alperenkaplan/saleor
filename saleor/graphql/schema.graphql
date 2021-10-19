@@ -5665,6 +5665,7 @@ input ProductVariantBulkCreateInput {
   trackInventory: Boolean
   weight: WeightScalar
   preorder: PreorderSettingsInput
+  quantityLimitPerCustomer: Int
   stocks: [StockInput!]
   channelListings: [ProductVariantChannelListingAddInput!]
 }
@@ -5720,6 +5721,7 @@ input ProductVariantCreateInput {
   trackInventory: Boolean
   weight: WeightScalar
   preorder: PreorderSettingsInput
+  quantityLimitPerCustomer: Int
   product: ID!
   stocks: [StockInput!]
 }
@@ -5743,6 +5745,7 @@ input ProductVariantInput {
   trackInventory: Boolean
   weight: WeightScalar
   preorder: PreorderSettingsInput
+  quantityLimitPerCustomer: Int
 }
 
 type ProductVariantPreorderDeactivate {
